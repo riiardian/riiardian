@@ -1,25 +1,25 @@
 <div align="center">
-  <img src="./assets/tech-sphere.svg" alt="Rio Ardian Pratama — 3D System Architecture Sphere" width="100%" />
-
-  <br/><br/>
+  <h1>Hi there, I'm Rio Ardian Pratama 👋</h1>
+  <p><strong>Software Engineer • Scalable Systems & High-Concurrency Backend Architect</strong></p>
+  <p>Designing high-availability transactional platforms, distributed engines, and precision web systems.</p>
 
   <a href="https://github.com/riiardian">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=550&lines=Software+Engineer+%7C+Scalable+Backend+Systems;Building+High-Concurrency+%26+ACID+Platforms;Next.js+15+%E2%80%A2+Go+(Golang)+%E2%80%A2+TypeScript;Architecting+Zero-Bloat+Production+Infrastructure;FinTech+Engines+%2B+Multimodal+Vision+AI" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2500&pause=800&color=38BDF8&center=true&vCenter=true&width=420&lines=Software+Engineer;Building+Scalable+Backends;Go+(Golang)+%E2%80%A2+Next.js+%E2%80%A2+TypeScript;FinTech+Engines+%26+Precision+Apps" alt="Typing SVG" />
   </a>
 
   <br/><br/>
 
   <p>
     <a href="https://github.com/riiardian">
-      <img src="https://img.shields.io/badge/GitHub-riiardian-181717?style=for-the-badge&logo=github" alt="GitHub" />
+      <img src="https://img.shields.io/badge/GitHub-riiardian-181717?style=flat-square&logo=github" alt="GitHub" />
     </a>
     <a href="mailto:ardianrio990@gmail.com">
-      <img src="https://img.shields.io/badge/Email-ardianrio990%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+      <img src="https://img.shields.io/badge/Email-ardianrio990%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
     </a>
     <a href="https://linkedin.com/in/riiardian">
-      <img src="https://img.shields.io/badge/LinkedIn-Rio%20Ardian-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/LinkedIn-Rio%20Ardian-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" />
     </a>
-    <img src="https://komarev.com/ghpvc/?username=riiardian&label=PROFILE+VIEWS&style=for-the-badge&color=0969da" alt="Profile Views" />
+    <img src="https://img.shields.io/badge/Location-Indonesia-0052CC?style=flat-square" alt="Location" />
   </p>
 </div>
 
@@ -36,50 +36,29 @@
 
 ### 🌟 Featured Production Projects
 
-<table>
-  <tr>
-    <td width="33.3%" valign="top">
-      <h4>⚡ <a href="https://aeroflazz.com">Aeroflazz</a></h4>
-      <p><em>High-Throughput Digital Products & PPOB Distribution Platform</em></p>
-      <ul>
-        <li>Engineered transactional backend in Go with pessimistic locking (GORM v2) to guarantee balance integrity under concurrent spikes.</li>
-        <li>Sub-second Next.js client with granular caching rules and Cloudflare CDN bypass layers.</li>
-        <li>High-availability daemonized service management via Supervisor and PM2 on Linux VPS.</li>
-      </ul>
-      <p>
-        <a href="https://aeroflazz.com"><b>🌐 Live Platform</b></a>
-      </p>
-      <sub><b>Stack:</b> Go (Golang), PostgreSQL, Next.js, Supervisor, Nginx, Linux VPS</sub>
-    </td>
-    <td width="33.3%" valign="top">
-      <h4>💳 <a href="https://paysaku.site">PaySaku</a></h4>
-      <p><em>Asynchronous Payment Processing & FinTech Application</em></p>
-      <ul>
-        <li>Asynchronous background transaction processing pipelines powered by Redis worker queues.</li>
-        <li>Idempotent payment consumption, webhook verification, and automated transaction reconciliation.</li>
-        <li>Strict defensive input validation and decoupled queuing architecture.</li>
-      </ul>
-      <p>
-        <a href="https://paysaku.site"><b>🌐 Live Platform</b></a>
-      </p>
-      <sub><b>Stack:</b> PHP 8.4, Laravel, Redis Queues, MySQL, Supervisor</sub>
-    </td>
-    <td width="33.3%" valign="top">
-      <h4>🌾 <a href="https://github.com/riiardian/kertanusa">Kertanusa</a></h4>
-      <p><em>Precision Agriculture & AI-Driven Decision Support System (DSS)</em></p>
-      <ul>
-        <li>Real-time multimodal computer vision pipeline for automated plant pathology and pest diagnosis.</li>
-        <li>Satellite agrometeorology integration (ECMWF, NOAA, BMKG) for dynamic spray windows and soil water balance (FAO No. 56).</li>
-        <li>OWASP security hardened with in-memory sliding-window rate limiting.</li>
-      </ul>
-      <p>
-        <a href="https://kertanusa.web.id"><b>🌐 Live Prototype</b></a> • 
-        <a href="https://github.com/riiardian/kertanusa"><b>💻 Repository</b></a>
-      </p>
-      <sub><b>Stack:</b> Next.js 15, TypeScript, Tailwind CSS, Multimodal Vision AI, Leaflet GIS</sub>
-    </td>
-  </tr>
-</table>
+#### ⚡ [Aeroflazz](https://aeroflazz.com) — High-Throughput Digital Products & PPOB Platform
+* **Architecture:** Engineered transactional backend in **Go** with pessimistic locking (**GORM v2**) to guarantee balance integrity under concurrent transaction surges.
+* **Frontend & Caching:** Sub-second **Next.js** client with granular caching rules, Cloudflare CDN bypass layers, and optimized asset delivery.
+* **Infrastructure:** High-availability daemonized service management via **Supervisor** and **PM2** on Linux VPS.
+* **Tech Stack:** `Go (Golang)` • `PostgreSQL` • `Next.js` • `TypeScript` • `Supervisor` • `Nginx` • `Linux VPS`
+* **Links:** [🌐 Live Platform](https://aeroflazz.com)
+
+---
+
+#### 💳 [PaySaku](https://paysaku.site) — Asynchronous Payment Processing & FinTech Application
+* **Architecture:** Asynchronous background transaction processing pipelines powered by **Redis** worker queues via Supervisor.
+* **Reliability:** Idempotent payment consumption, defensive financial validation, and automated transaction reconciliation.
+* **Tech Stack:** `PHP 8.4` • `Laravel` • `Redis Queues` • `MySQL` • `Supervisor` • `RESTful APIs`
+* **Links:** [🌐 Live Platform](https://paysaku.site)
+
+---
+
+#### 🌾 [Kertanusa](https://kertanusa.web.id) — Precision Agriculture & AI-Driven Decision Support System (DSS)
+* **Computer Vision AI:** Real-time multimodal computer vision pipeline for automated plant pathology and pest diagnosis with sub-2s inference.
+* **Satellite Agrometeorology:** Integration of global telemetry (**ECMWF, NOAA**) calibrated against national ground stations (**BMKG**) for dynamic spray windows and soil water balance (**FAO Paper No. 56**).
+* **Security Hardening:** OWASP-compliant HTTP security headers, in-memory sliding-window rate limiting (12–60 req/min), and input sanitization.
+* **Tech Stack:** `Next.js 15 (Turbopack)` • `TypeScript` • `Tailwind CSS` • `Multimodal Vision AI` • `Leaflet GIS` • `Nginx`
+* **Links:** [🌐 Live Prototype](https://kertanusa.web.id) • [💻 Open Repository](https://github.com/riiardian/kertanusa)
 
 ---
 
