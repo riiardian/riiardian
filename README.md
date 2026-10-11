@@ -29,8 +29,9 @@
 
 ### 👨‍💻 About Me
 
-* 🚀 **Engineering Focus:** Designing resilient, high-concurrency architectures with zero-compromise data integrity and low-latency execution.
-* 🛠️ **Systems & Backend:** Specializing in transactional state engines, pessimistic locking mechanisms (ACID compliance), decoupled message/worker queues, and robust API orchestration.
+* 🏢 **Founder & Platform Owner:** Creator & Principal Engineer of [**AeroFlazz**](https://aeroflazz.com) (Digital Distribution & PPOB Gateway), [**PaySaku**](https://paysaku.site) (FinTech Payment Processor), and [**Kertanusa**](https://kertanusa.web.id) (Precision Agriculture & Multimodal AI).
+* 🚀 **Engineering Focus:** Designing resilient, high-concurrency architectures with zero-compromise data integrity, ACID compliance, and low-latency execution.
+* 🛠️ **Systems & Backend:** Specializing in transactional state engines, pessimistic locking mechanisms (GORM v2), decoupled message/worker queues, and robust API orchestration.
 * 🛡️ **Production Reliability & Security:** Applying OWASP hardening standards, in-memory sliding-window rate limiters, automated failover pipelines, and zero-downtime Linux server orchestration.
 * 🎓 **Education:** Informatics Student at **Telkom University** (Class of 2026).
 
@@ -38,12 +39,13 @@
 
 ### 🌟 Featured Production Projects
 
-#### ⚡ [Aeroflazz](https://aeroflazz.com) — High-Throughput Digital Products & PPOB Platform
+#### ⚡ [AeroFlazz](https://aeroflazz.com) — High-Throughput Digital Products & PPOB Platform
+* **Ownership & Role:** Founder, Owner & Principal Architect — designed and developed full-stack from scratch.
 * **Architecture:** Engineered transactional backend in **Go** with pessimistic locking (**GORM v2**) to guarantee balance integrity under concurrent transaction surges.
 * **Frontend & Caching:** Sub-second **Next.js** client with granular caching rules, Cloudflare CDN bypass layers, and optimized asset delivery.
 * **Infrastructure:** High-availability daemonized service management via **Supervisor** and **PM2** on Linux VPS.
 * **Tech Stack:** `Go (Golang)` • `PostgreSQL` • `Next.js` • `TypeScript` • `Supervisor` • `Nginx` • `Linux VPS`
-* **Links:** [🌐 Live Platform (aeroflazz.com)](https://aeroflazz.com)
+* **Links:** [🌐 Live Platform (aeroflazz.com)](https://aeroflazz.com) • [🏢 Official Owner Profile](https://aeroflazz.com/tentang-kami)
 
 ---
 
