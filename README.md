@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0D1117,25:161B22,50:0969DA,75:1F6FEB,100:0D1117&height=220&section=header&text=Rio%20Ardian%20Pratama&fontSize=42&fontColor=F0F6FC&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%E2%80%A2%20Scalable%20Systems%20%26%20Cloud%20Architect&descAlignY=58&descAlign=50" width="100%" alt="Rio Ardian Header" />
+  <img src="./assets/tech-sphere.svg" alt="Rio Ardian Pratama — 3D System Architecture Sphere" width="100%" />
 
-  <br/>
+  <br/><br/>
 
   <a href="https://github.com/riiardian">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=550&lines=Software+Engineer+%7C+Scalable+Backend+Systems;Building+High-Concurrency+%26+ACID+Platforms;Next.js+15+%E2%80%A2+Go+(Golang)+%E2%80%A2+TypeScript;Architecting+Zero-Bloat+Production+Infrastructure;FinTech+Engines+%2B+Multimodal+Vision+AI" alt="Typing SVG" />
@@ -25,24 +25,6 @@
 
 ---
 
-### 🖥️ Runtime & Architecture State
-
-```bash
-riiardian@production-node:~$ systemctl status engineering-core
-● engineering-core.service - Rio Ardian Pratama (Software Engineer)
-     Loaded: loaded (/etc/systemd/system/engineering-core.service; enabled; vendor preset: enabled)
-     Active: active (running) since 2023; 24/7 high-availability production
-   Main PID: 1337 (system-architect)
-      Tasks: concurrency (GORM v2), worker-queues (Redis), vision-ai (Multimodal)
-     Memory: zero-bloat / optimized
-     CGroup: /system.slice/engineering-core.service
-             ├─ /app/aeroflazz   [Go + PostgreSQL] (Pessimistic Locking & PPOB Distribution)
-             ├─ /app/kertanusa   [Next.js 15 + Satellites + Vision AI] (Precision DSS)
-             └─ /app/paysaku     [PHP 8.4 + Laravel + Redis] (Asynchronous FinTech Engine)
-```
-
----
-
 ### 👨‍💻 About Me
 
 * 🚀 **Engineering Focus:** Designing resilient, high-concurrency architectures with zero-compromise data integrity and low-latency execution.
@@ -56,26 +38,12 @@ riiardian@production-node:~$ systemctl status engineering-core
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h4>🌾 <a href="https://github.com/riiardian/kertanusa">Kertanusa</a></h4>
-      <p><em>Precision Agriculture & AI-Driven Decision Support System (DSS)</em></p>
-      <ul>
-        <li>Real-time multimodal computer vision pipeline for automated plant pathology and pest diagnosis.</li>
-        <li>Satellite agrometeorology integration (ECMWF, NOAA, BMKG) for dynamic spray windows and soil water balance (FAO Paper No. 56).</li>
-        <li>OWASP security hardened with in-memory sliding-window rate limiting and geospatial input sanitization.</li>
-      </ul>
-      <p>
-        <a href="https://kertanusa.web.id"><b>🌐 Live Prototype</b></a> • 
-        <a href="https://github.com/riiardian/kertanusa"><b>💻 Repository</b></a>
-      </p>
-      <sub><b>Stack:</b> Next.js 15, TypeScript, Tailwind CSS, Multimodal Vision AI, Leaflet GIS</sub>
-    </td>
-    <td width="50%" valign="top">
+    <td width="33.3%" valign="top">
       <h4>⚡ <a href="https://aeroflazz.com">Aeroflazz</a></h4>
       <p><em>High-Throughput Digital Products & PPOB Distribution Platform</em></p>
       <ul>
-        <li>Engineered transactional backend in Go with pessimistic locking (GORM v2) to guarantee balance integrity under concurrent transaction spikes.</li>
-        <li>Sub-second Next.js client with granular caching rules, Cloudflare CDN bypass layers, and optimized asset delivery.</li>
+        <li>Engineered transactional backend in Go with pessimistic locking (GORM v2) to guarantee balance integrity under concurrent spikes.</li>
+        <li>Sub-second Next.js client with granular caching rules and Cloudflare CDN bypass layers.</li>
         <li>High-availability daemonized service management via Supervisor and PM2 on Linux VPS.</li>
       </ul>
       <p>
@@ -83,28 +51,32 @@ riiardian@production-node:~$ systemctl status engineering-core
       </p>
       <sub><b>Stack:</b> Go (Golang), PostgreSQL, Next.js, Supervisor, Nginx, Linux VPS</sub>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
+    <td width="33.3%" valign="top">
       <h4>💳 <a href="https://paysaku.site">PaySaku</a></h4>
       <p><em>Asynchronous Payment Processing & FinTech Application</em></p>
       <ul>
         <li>Asynchronous background transaction processing pipelines powered by Redis worker queues.</li>
         <li>Idempotent payment consumption, webhook verification, and automated transaction reconciliation.</li>
+        <li>Strict defensive input validation and decoupled queuing architecture.</li>
       </ul>
       <p>
         <a href="https://paysaku.site"><b>🌐 Live Platform</b></a>
       </p>
       <sub><b>Stack:</b> PHP 8.4, Laravel, Redis Queues, MySQL, Supervisor</sub>
     </td>
-    <td width="50%" valign="top">
-      <h4>🤖 Local AI Infrastructure & Routing</h4>
-      <p><em>High-Availability Multi-Account LLM & Vision Gateway</em></p>
+    <td width="33.3%" valign="top">
+      <h4>🌾 <a href="https://github.com/riiardian/kertanusa">Kertanusa</a></h4>
+      <p><em>Precision Agriculture & AI-Driven Decision Support System (DSS)</em></p>
       <ul>
-        <li>Managed multi-account OAuth connection pooling with 8-way round-robin rotation to maximize quota utilization.</li>
-        <li>Sub-second inference routing for multimodal computer vision and autonomous tooling agents.</li>
+        <li>Real-time multimodal computer vision pipeline for automated plant pathology and pest diagnosis.</li>
+        <li>Satellite agrometeorology integration (ECMWF, NOAA, BMKG) for dynamic spray windows and soil water balance (FAO No. 56).</li>
+        <li>OWASP security hardened with in-memory sliding-window rate limiting.</li>
       </ul>
-      <sub><b>Stack:</b> Node.js, SQLite, Systemd/PM2, Firewall Hardening, Unix Sockets</sub>
+      <p>
+        <a href="https://kertanusa.web.id"><b>🌐 Live Prototype</b></a> • 
+        <a href="https://github.com/riiardian/kertanusa"><b>💻 Repository</b></a>
+      </p>
+      <sub><b>Stack:</b> Next.js 15, TypeScript, Tailwind CSS, Multimodal Vision AI, Leaflet GIS</sub>
     </td>
   </tr>
 </table>
@@ -144,6 +116,5 @@ riiardian@production-node:~$ systemctl status engineering-core
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0D1117,25:161B22,50:0969DA,75:1F6FEB,100:0D1117&height=100&section=footer" width="100%" alt="Footer Wave" />
   <sub>Designed & engineered with clean code principles. © 2026 Rio Ardian Pratama</sub>
 </div>
