@@ -1,21 +1,45 @@
 <div align="center">
-  <h1>Hi there, I'm Rio Ardian Pratama 👋</h1>
-  <p><strong>Software Engineer • Scalable Systems & High-Concurrency Backend Architect</strong></p>
-  <p>Building high-reliability transactional platforms, cloud infrastructure, and AI-driven precision systems.</p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0D1117,25:161B22,50:0969DA,75:1F6FEB,100:0D1117&height=220&section=header&text=Rio%20Ardian%20Pratama&fontSize=42&fontColor=F0F6FC&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%E2%80%A2%20Scalable%20Systems%20%26%20Cloud%20Architect&descAlignY=58&descAlign=50" width="100%" alt="Rio Ardian Header" />
+
+  <br/>
+
+  <a href="https://github.com/riiardian">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=550&lines=Software+Engineer+%7C+Scalable+Backend+Systems;Building+High-Concurrency+%26+ACID+Platforms;Next.js+15+%E2%80%A2+Go+(Golang)+%E2%80%A2+TypeScript;Architecting+Zero-Bloat+Production+Infrastructure;FinTech+Engines+%2B+Multimodal+Vision+AI" alt="Typing SVG" />
+  </a>
+
+  <br/><br/>
 
   <p>
     <a href="https://github.com/riiardian">
-      <img src="https://img.shields.io/badge/GitHub-riiardian-181717?style=flat-square&logo=github" alt="GitHub" />
+      <img src="https://img.shields.io/badge/GitHub-riiardian-181717?style=for-the-badge&logo=github" alt="GitHub" />
     </a>
     <a href="mailto:ardianrio990@gmail.com">
-      <img src="https://img.shields.io/badge/Email-ardianrio990%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+      <img src="https://img.shields.io/badge/Email-ardianrio990%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
     <a href="https://linkedin.com/in/riiardian">
-      <img src="https://img.shields.io/badge/LinkedIn-Rio%20Ardian-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/LinkedIn-Rio%20Ardian-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
     </a>
-    <img src="https://img.shields.io/badge/Location-Indonesia-0052CC?style=flat-square" alt="Location" />
+    <img src="https://komarev.com/ghpvc/?username=riiardian&label=PROFILE+VIEWS&style=for-the-badge&color=0969da" alt="Profile Views" />
   </p>
 </div>
+
+---
+
+### 🖥️ Runtime & Architecture State
+
+```bash
+riiardian@production-node:~$ systemctl status engineering-core
+● engineering-core.service - Rio Ardian Pratama (Software Engineer)
+     Loaded: loaded (/etc/systemd/system/engineering-core.service; enabled; vendor preset: enabled)
+     Active: active (running) since 2023; 24/7 high-availability production
+   Main PID: 1337 (system-architect)
+      Tasks: concurrency (GORM v2), worker-queues (Redis), vision-ai (Multimodal)
+     Memory: zero-bloat / optimized
+     CGroup: /system.slice/engineering-core.service
+             ├─ /app/aeroflazz   [Go + PostgreSQL] (Pessimistic Locking & PPOB Distribution)
+             ├─ /app/kertanusa   [Next.js 15 + Satellites + Vision AI] (Precision DSS)
+             └─ /app/paysaku     [PHP 8.4 + Laravel + Redis] (Asynchronous FinTech Engine)
+```
 
 ---
 
@@ -120,5 +144,6 @@
 ---
 
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:0D1117,25:161B22,50:0969DA,75:1F6FEB,100:0D1117&height=100&section=footer" width="100%" alt="Footer Wave" />
   <sub>Designed & engineered with clean code principles. © 2026 Rio Ardian Pratama</sub>
 </div>
