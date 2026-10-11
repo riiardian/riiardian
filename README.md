@@ -1,25 +1,27 @@
 <div align="center">
-  <h1>Hi there, I'm Rio Ardian Pratama 👋</h1>
-  <p><strong>Software Engineer • Scalable Systems & High-Concurrency Backend Architect</strong></p>
-  <p>Designing high-availability transactional platforms, distributed engines, and precision web systems.</p>
+  <h1 align="center">Rio Ardian Pratama 👋</h1>
+  <p align="center">
+    <strong>Software Engineer • Scalable Systems & High-Concurrency Backend Architect</strong><br/>
+    <em>Designing high-availability transactional platforms, distributed engines, and precision web systems.</em>
+  </p>
 
   <a href="https://github.com/riiardian">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2500&pause=800&color=38BDF8&center=true&vCenter=true&width=420&lines=Software+Engineer;Building+Scalable+Backends;Go+(Golang)+%E2%80%A2+Next.js+%E2%80%A2+TypeScript;FinTech+Engines+%26+Precision+Apps" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2500&pause=800&color=38BDF8&center=true&vCenter=true&width=440&lines=Software+Engineer;Building+Scalable+Backends;Go+(Golang)+%E2%80%A2+Next.js+%E2%80%A2+TypeScript;FinTech+Engines+%26+Precision+Apps" alt="Typing SVG" />
   </a>
 
   <br/><br/>
 
-  <p>
+  <p align="center">
     <a href="https://github.com/riiardian">
-      <img src="https://img.shields.io/badge/GitHub-riiardian-181717?style=flat-square&logo=github" alt="GitHub" />
+      <img src="https://img.shields.io/badge/GitHub-riiardian-181717?style=for-the-badge&logo=github" alt="GitHub" />
     </a>
     <a href="mailto:ardianrio990@gmail.com">
-      <img src="https://img.shields.io/badge/Email-ardianrio990%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+      <img src="https://img.shields.io/badge/Email-ardianrio990%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
     <a href="https://linkedin.com/in/riiardian">
-      <img src="https://img.shields.io/badge/LinkedIn-Rio%20Ardian-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/LinkedIn-Rio%20Ardian-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
     </a>
-    <img src="https://img.shields.io/badge/Location-Indonesia-0052CC?style=flat-square" alt="Location" />
+    <img src="https://img.shields.io/badge/Location-Indonesia-0052CC?style=for-the-badge" alt="Location" />
   </p>
 </div>
 
@@ -41,7 +43,7 @@
 * **Frontend & Caching:** Sub-second **Next.js** client with granular caching rules, Cloudflare CDN bypass layers, and optimized asset delivery.
 * **Infrastructure:** High-availability daemonized service management via **Supervisor** and **PM2** on Linux VPS.
 * **Tech Stack:** `Go (Golang)` • `PostgreSQL` • `Next.js` • `TypeScript` • `Supervisor` • `Nginx` • `Linux VPS`
-* **Links:** [🌐 Live Platform](https://aeroflazz.com)
+* **Links:** [🌐 Live Platform (aeroflazz.com)](https://aeroflazz.com)
 
 ---
 
@@ -49,7 +51,7 @@
 * **Architecture:** Asynchronous background transaction processing pipelines powered by **Redis** worker queues via Supervisor.
 * **Reliability:** Idempotent payment consumption, defensive financial validation, and automated transaction reconciliation.
 * **Tech Stack:** `PHP 8.4` • `Laravel` • `Redis Queues` • `MySQL` • `Supervisor` • `RESTful APIs`
-* **Links:** [🌐 Live Platform](https://paysaku.site)
+* **Links:** [🌐 Live Platform (paysaku.site)](https://paysaku.site)
 
 ---
 
@@ -58,7 +60,13 @@
 * **Satellite Agrometeorology:** Integration of global telemetry (**ECMWF, NOAA**) calibrated against national ground stations (**BMKG**) for dynamic spray windows and soil water balance (**FAO Paper No. 56**).
 * **Security Hardening:** OWASP-compliant HTTP security headers, in-memory sliding-window rate limiting (12–60 req/min), and input sanitization.
 * **Tech Stack:** `Next.js 15 (Turbopack)` • `TypeScript` • `Tailwind CSS` • `Multimodal Vision AI` • `Leaflet GIS` • `Nginx`
-* **Links:** [🌐 Live Prototype](https://kertanusa.web.id) • [💻 Open Repository](https://github.com/riiardian/kertanusa)
+* **Links:** [🌐 Live Prototype (kertanusa.web.id)](https://kertanusa.web.id) • [💻 Open Repository](https://github.com/riiardian/kertanusa)
+
+<div align="center" style="margin-top: 15px;">
+  <a href="https://github.com/riiardian/kertanusa">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=riiardian&repo=kertanusa&theme=github_dark&hide_border=false" alt="Kertanusa Repository Card" />
+  </a>
+</div>
 
 ---
 
