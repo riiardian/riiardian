@@ -1,66 +1,124 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%" alt="Header RGB Line">
+  <h1>Hi there, I'm Rio Ardian Pratama 👋</h1>
+  <p><strong>Software Engineer • Scalable Systems & High-Concurrency Backend Architect</strong></p>
+  <p>Building high-reliability transactional platforms, cloud infrastructure, and AI-driven precision systems.</p>
+
+  <p>
+    <a href="https://github.com/riiardian">
+      <img src="https://img.shields.io/badge/GitHub-riiardian-181717?style=flat-square&logo=github" alt="GitHub" />
+    </a>
+    <a href="mailto:ardianrio990@gmail.com">
+      <img src="https://img.shields.io/badge/Email-ardianrio990%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+    </a>
+    <a href="https://linkedin.com/in/riiardian">
+      <img src="https://img.shields.io/badge/LinkedIn-Rio%20Ardian-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" />
+    </a>
+    <img src="https://img.shields.io/badge/Location-Indonesia-0052CC?style=flat-square" alt="Location" />
+  </p>
 </div>
 
-<h1 align="center">
-  <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="35px">
-  Hello, I'm Rio Ardian Pratama
-</h1>
+---
 
-<h3 align="center">Software Engineer | System Architect | FinTech Infrastructure Enthusiast</h3>
+### 👨‍💻 About Me
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="500" alt="Terminal Loading">
-</p>
+* 🚀 **Engineering Focus:** Designing resilient, high-concurrency architectures with zero-compromise data integrity and low-latency execution.
+* 🛠️ **Systems & Backend:** Specializing in transactional state engines, pessimistic locking mechanisms (ACID compliance), decoupled message/worker queues, and robust API orchestration.
+* 🛡️ **Production Reliability & Security:** Applying OWASP hardening standards, in-memory sliding-window rate limiters, automated failover pipelines, and zero-downtime Linux server orchestration.
+* 🎓 **Education:** Informatics Student at **Telkom University** (Class of 2026).
 
 ---
 
-### 👨‍💻 Executive Profile
-I am a dedicated **Software Engineer** specializing in architecting and developing large-scale digital ecosystems, particularly within the Financial Technology (FinTech) and Digital Products sectors. Armed with strong algorithmic problem-solving skills, I design backend architectures that are not only highly performant but also rigorously resilient against logic flaws and database vulnerabilities.
+### 🌟 Featured Production Projects
 
-My ultimate professional vision is to join **Bank Central Asia (BCA)** 🏦 as a Software Engineer. I am deeply driven by the ambition to contribute to designing, securing, and optimizing the most innovative enterprise-grade digital banking infrastructure in Indonesia.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🌾 <a href="https://github.com/riiardian/kertanusa">Kertanusa</a></h4>
+      <p><em>Precision Agriculture & AI-Driven Decision Support System (DSS)</em></p>
+      <ul>
+        <li>Real-time multimodal computer vision pipeline for automated plant pathology and pest diagnosis.</li>
+        <li>Satellite agrometeorology integration (ECMWF, NOAA, BMKG) for dynamic spray windows and soil water balance (FAO Paper No. 56).</li>
+        <li>OWASP security hardened with in-memory sliding-window rate limiting and geospatial input sanitization.</li>
+      </ul>
+      <p>
+        <a href="https://kertanusa.web.id"><b>🌐 Live Prototype</b></a> • 
+        <a href="https://github.com/riiardian/kertanusa"><b>💻 Repository</b></a>
+      </p>
+      <sub><b>Stack:</b> Next.js 15, TypeScript, Tailwind CSS, Multimodal Vision AI, Leaflet GIS</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h4>⚡ <a href="https://aeroflazz.com">Aeroflazz</a></h4>
+      <p><em>High-Throughput Digital Products & PPOB Distribution Platform</em></p>
+      <ul>
+        <li>Engineered transactional backend in Go with pessimistic locking (GORM v2) to guarantee balance integrity under concurrent transaction spikes.</li>
+        <li>Sub-second Next.js client with granular caching rules, Cloudflare CDN bypass layers, and optimized asset delivery.</li>
+        <li>High-availability daemonized service management via Supervisor and PM2 on Linux VPS.</li>
+      </ul>
+      <p>
+        <a href="https://aeroflazz.com"><b>🌐 Live Platform</b></a>
+      </p>
+      <sub><b>Stack:</b> Go (Golang), PostgreSQL, Next.js, Supervisor, Nginx, Linux VPS</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>💳 <a href="https://paysaku.site">PaySaku</a></h4>
+      <p><em>Asynchronous Payment Processing & FinTech Application</em></p>
+      <ul>
+        <li>Asynchronous background transaction processing pipelines powered by Redis worker queues.</li>
+        <li>Idempotent payment consumption, webhook verification, and automated transaction reconciliation.</li>
+      </ul>
+      <p>
+        <a href="https://paysaku.site"><b>🌐 Live Platform</b></a>
+      </p>
+      <sub><b>Stack:</b> PHP 8.4, Laravel, Redis Queues, MySQL, Supervisor</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🤖 Local AI Infrastructure & Routing</h4>
+      <p><em>High-Availability Multi-Account LLM & Vision Gateway</em></p>
+      <ul>
+        <li>Managed multi-account OAuth connection pooling with 8-way round-robin rotation to maximize quota utilization.</li>
+        <li>Sub-second inference routing for multimodal computer vision and autonomous tooling agents.</li>
+      </ul>
+      <sub><b>Stack:</b> Node.js, SQLite, Systemd/PM2, Firewall Hardening, Unix Sockets</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 🏢 Professional Experience & Track Record
-
-**Founder & Lead Architect — Aeroflazz** *(2023 - Present)*  
-Spearheading the full-stack development of an automated PPOB and Digital Product ecosystem handling real-time financial transactions.
-- **Backend Architecture:** Engineered complex relational database structures to securely process concurrent balance fluctuations across hundreds of users without data discrepancies.
-- **API Orchestration:** Developed advanced RESTful API bridges for seamless, encrypted multi-connection synchronization with various automated Payment Gateways and Provider networks.
-- **Security Optimization:** Implemented enterprise-level security measures including Prepared Statements, Multi-Layer Validation, and Double-Spend Prevention mechanisms (Race-Condition handling).
-
-**Informatics Student — Telkom University** *(Class of 2026)*  
-Preparing for intensive academic studies focusing on Computer Science, Software Engineering, Distributed System Architectures, and Computer Network Security.
-
----
-
-### 🧠 Core Competencies & Focus Areas
-
-- 🔐 **Security & Cryptography:** *Session Management, Payload Hashing, Anti-SQL Injection*.
-- ⚙️ **Software Engineering:** *Monolithic Architectures, Event-Driven Logic, Cronjob Automation*.
-- 📱 **Mobile & Enterprise Ecosystems:** Cross-platform mobile development (Flutter/Dart) and large-scale backend infrastructure integrations (Java/Spring Boot).
-- 🌐 **API Development:** *Webhooks Handling, cURL Parsing, JSON Data Formatting*.
-
----
-
-### 🚀 Enterprise Technology Stack
+### 💻 Tech Arsenal
 
 <div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=php,js,ts,react,tailwind,mysql,postgres,java,spring,kotlin,android,flutter,dart,redis,docker,aws,nginx,linux,git,github,postman&perline=7" alt="Tech Stack Icons" />
-  </a>
+  <img src="https://skillicons.dev/icons?i=go,ts,js,php,nextjs,react,tailwind,postgres,mysql,redis,docker,linux,nginx,git,github,postman&theme=dark&perline=8" alt="Tech Stack" />
+</div>
+
+<br/>
+
+| Domain | Technologies & Tools |
+| :--- | :--- |
+| **Languages** | Go (Golang), TypeScript, JavaScript, PHP, SQL, Python |
+| **Frontend & UI** | Next.js 15 (App Router, Turbopack), React, Tailwind CSS |
+| **Backend & Architecture** | RESTful APIs, Event-Driven / Worker Queues, GORM, Laravel, Idempotent Engines |
+| **Databases & Caching** | PostgreSQL, MySQL, SQLite, Redis |
+| **DevOps & Infrastructure** | Linux (Debian/Ubuntu), Nginx Reverse Proxy, PM2, Supervisor, Docker, Cloudflare |
+| **Security & Standards** | OWASP Hardening (HSTS, CSP), Anti-Race Condition, Input Sanitization, Rate Limiting |
+
+---
+
+### 📊 GitHub Activity & Metrics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=riiardian&show_icons=true&theme=github_dark&hide_border=false&count_private=true" width="48%" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=riiardian&layout=compact&theme=github_dark&hide_border=false" width="48%" alt="Top Languages" />
+</div>
+
+<div align="center" style="margin-top: 10px;">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=riiardian&theme=github_dark&hide_border=false" width="97%" alt="GitHub Streak" />
 </div>
 
 ---
 
-### ⚙️ How I Build Things
-
-```javascript
-const rio = {
-    pronouns: "He" | "Him",
-    architecture: ["Monolithic", "RESTful APIs", "Event-Driven"],
-    focus: "Architecting automated, race-condition proof digital ecosystems.",
-    security: ["SQL Injection Prevention", "Session Handlers", "Payload Hashing"],
-    ide: "Visual Studio Code + AI Assistance"
-}
+<div align="center">
+  <sub>Designed & engineered with clean code principles. © 2026 Rio Ardian Pratama</sub>
+</div>
