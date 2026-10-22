@@ -45,27 +45,27 @@ Systems Architect and Backend Engineer specializing in high-concurrency transact
 
 ### Production Systems
 
-#### AeroFlazz — High-Throughput Digital Products &amp; PPOB Infrastructure
-* **Architecture:** Full-stack distribution platform. Asynchronous backend in **Go (Fiber)** with strict **PostgreSQL** ACID transaction boundaries.
-* **Concurrency &amp; Security:** Pessimistic row-level locking (`GORM v2` / `SELECT FOR UPDATE`) and atomic Redis mutexes to eliminate race conditions under checkout surges. Hardened against OWASP WSTG vectors with rate limiting and automated lockouts.
-* **Tech Stack:** `Go (Golang)` • `PostgreSQL` • `Redis` • `Next.js` • `TypeScript` • `Supervisor` • `Nginx`
-* **Links:** [Live Platform](https://aeroflazz.com) • [Founder Profile](https://aeroflazz.com/tentang-kami)
+#### AeroFlazz — Digital Distribution &amp; PPOB Gateway
+- **Core:** High-throughput transactional backend in **Go (Fiber)** &amp; **PostgreSQL** under strict ACID boundaries.
+- **Reliability:** Pessimistic row locking (`SELECT FOR UPDATE`), Redis distributed mutex, OWASP-hardened rate limiter.
+- **Stack:** `Go (Golang)` • `PostgreSQL` • `Redis` • `Next.js` • `TypeScript` • `Nginx`
+- **Deploy:** [Live Platform (aeroflazz.com)](https://aeroflazz.com) • [Founder Profile](https://aeroflazz.com/tentang-kami)
 
 ---
 
-#### PaySaku v2 — Real-Time Payment Gateway &amp; Mutation Platform
-* **Architecture:** High-throughput financial automation gateway built in native **Rust (Tokio / Axum)** for sub-millisecond transaction routing, zero-overhead memory footprint, and high-volume concurrent webhook dispatching.
-* **Dual-Engine Auto Sync:** Native scrapers for **GoBiz (GoPay Merchant)** and **ShopeePay** delivering automated mutation reconciliation without human intervention. Cryptographic **HMAC-SHA256** signature verification on all callbacks.
-* **Tech Stack:** `Rust` • `Tokio` • `React` • `TypeScript` • `PostgreSQL` • `HMAC-SHA256` • `Nginx`
-* **Links:** [Live Platform](https://paysaku.site) • [API Documentation](https://paysaku.site/docs)
+#### PaySaku v2 — Real-Time Payment Gateway &amp; Mutation Engine
+- **Core:** Native **Rust (Tokio / Axum)** asynchronous gateway with sub-millisecond webhook routing and zero-overhead memory footprint.
+- **Reliability:** Dual-engine automated reconciliation (GoBiz &amp; ShopeePay), cryptographic **HMAC-SHA256** signature enforcement.
+- **Stack:** `Rust` • `Tokio` • `React` • `TypeScript` • `PostgreSQL` • `HMAC-SHA256`
+- **Deploy:** [Live Platform (paysaku.site)](https://paysaku.site) • [API Documentation](https://paysaku.site/docs)
 
 ---
 
 #### Kertanusa — Precision Agriculture &amp; Telemetry Platform
-* **Architecture:** Decision support system integrating global agro-meteorological models (**ECMWF**, **NOAA**) calibrated against national ground stations (**BMKG**) to calculate soil water balance (**FAO-56**).
-* **Vision AI:** Multimodal computer vision inference pipeline for automated plant pathology diagnosis with sub-2s latency.
-* **Tech Stack:** `Next.js 15` • `TypeScript` • `Tailwind CSS` • `Multimodal Vision AI` • `Leaflet GIS` • `Nginx`
-* **Links:** [Source Repository](https://github.com/riiardian/kertanusa)
+- **Core:** Full-stack decision support system calculating soil water balance (**FAO-56**) via global telemetry (**ECMWF, NOAA, BMKG**).
+- **Inference:** Multimodal computer vision plant pathology diagnosis with sub-2s latency.
+- **Stack:** `Next.js 15` • `TypeScript` • `Tailwind CSS` • `Multimodal Vision AI` • `Leaflet GIS`
+- **Deploy:** [Source Repository](https://github.com/riiardian/kertanusa)
 
 <div align="center" style="margin-top: 15px;">
   <a href="https://github.com/riiardian/kertanusa">
