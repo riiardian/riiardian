@@ -41,12 +41,6 @@ Systems Architect and Backend Engineer specializing in high-concurrency transact
   <img src="https://raw.githubusercontent.com/riiardian/riiardian/main/assets/3d-architecture-matrix.svg" width="100%" alt="3D Distributed Systems Matrix" />
 </div>
 
-<br/>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/riiardian/riiardian/main/assets/system-telemetry.svg" width="100%" alt="Live System Telemetry" />
-</div>
-
 ---
 
 ### Production Systems

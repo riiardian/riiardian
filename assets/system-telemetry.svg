@@ -1,153 +1,381 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 200" width="100%" height="200" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="100%" fill="none">
   <defs>
+    <!-- Background Canvas Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090d16"/>
-      <stop offset="50%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#0a0f1d"/>
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="50%" stop-color="#0b101d"/>
+      <stop offset="100%" stop-color="#050811"/>
     </linearGradient>
-    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.1"/>
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.1"/>
+
+    <!-- 3D Node A (AeroFlazz - Electric Cyan) -->
+    <linearGradient id="cubeA_Top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
     </linearGradient>
-    <linearGradient id="greenPulse" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#059669"/>
-      <stop offset="100%" stop-color="#10b981"/>
+    <linearGradient id="cubeA_Left" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#082f49"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <linearGradient id="cubeA_Right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+
+    <!-- 3D Node B (PaySaku - Emerald Neon) -->
+    <linearGradient id="cubeB_Top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="cubeB_Left" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="cubeB_Right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#065f46"/>
+    </linearGradient>
+
+    <!-- 3D Master Hub (Edge Bus - Cyber Violet/Indigo) -->
+    <linearGradient id="cubeCenter_Top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5b4fc"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="cubeCenter_Left" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cubeCenter_Right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+
+    <!-- 3D Top Node (Kertanusa - Solar Amber) -->
+    <linearGradient id="cubeTop_Top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cubeTop_Left" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="cubeTop_Right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <!-- Core Glow Filters -->
+    <filter id="laserGlowCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
+    <filter id="laserGlowEmerald" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="beaconGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Isometric Drop Shadow -->
+    <radialGradient id="isoShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
   <style>
-    @keyframes scan {
-      0% { transform: translateY(0); opacity: 0.15; }
-      50% { opacity: 0.5; }
-      100% { transform: translateY(190px); opacity: 0.15; }
+    /* 3D Motion Keyframes */
+    @keyframes floatA {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
     }
-    @keyframes pulseLed {
-      0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #10b981); }
-      50% { opacity: 0.35; filter: none; }
+    @keyframes floatB {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-14px); }
     }
-    @keyframes radarSweep {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    @keyframes floatCenter {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
     }
-    @keyframes dataStream {
-      0% { stroke-dashoffset: 400; }
+    @keyframes floatTop {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Isometric Rotating Holographic Gyro Rings */
+    @keyframes rotateRingClockwise {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 720; }
+    }
+    @keyframes rotateRingCounter {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -720; }
+    }
+
+    /* Laser Stream & Scanning */
+    @keyframes dataPulse {
+      0% { stroke-dashoffset: 300; }
       100% { stroke-dashoffset: 0; }
     }
-    @keyframes textBlink {
+    @keyframes scanVertical {
+      0% { transform: translateY(0px); opacity: 0.15; }
+      50% { opacity: 0.65; }
+      100% { transform: translateY(415px); opacity: 0.15; }
+    }
+    @keyframes blinkCursor {
       0%, 49% { opacity: 1; }
       50%, 100% { opacity: 0; }
     }
-    .grid-line { stroke: #1e293b; stroke-width: 0.7; stroke-opacity: 0.4; }
-    .scan-line { animation: scan 4s linear infinite; stroke: #38bdf8; stroke-width: 1.2; stroke-opacity: 0.4; }
-    .led { animation: pulseLed 2s ease-in-out infinite; }
-    .stream { stroke-dasharray: 60 120; animation: dataStream 6s linear infinite; }
-    .cursor { animation: textBlink 1s infinite; }
+    @keyframes pulseBeacon {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #10b981); }
+      50% { opacity: 0.4; filter: none; }
+    }
+
+    .anim-float-a { animation: floatA 5.2s ease-in-out infinite; }
+    .anim-float-b { animation: floatB 5.8s ease-in-out infinite 0.6s; }
+    .anim-float-center { animation: floatCenter 6.2s ease-in-out infinite 0.2s; }
+    .anim-float-top { animation: floatTop 4.8s ease-in-out infinite 1s; }
+
+    .stream-flow-cyan { stroke-dasharray: 24 96; animation: dataPulse 4s linear infinite; }
+    .stream-flow-emerald { stroke-dasharray: 28 84; animation: dataPulse 3.6s linear infinite; }
+    .stream-flow-amber { stroke-dasharray: 20 80; animation: dataPulse 4.2s linear infinite; }
+
+    .ring-clockwise { stroke-dasharray: 20 15; animation: rotateRingClockwise 20s linear infinite; }
+    .ring-counter { stroke-dasharray: 12 12; animation: rotateRingCounter 14s linear infinite; }
+
+    .laser-scanner { animation: scanVertical 5s linear infinite; }
+    .beacon-active { animation: pulseBeacon 2s ease-in-out infinite; }
+    .blink-text { animation: blinkCursor 1s infinite; }
   </style>
 
-  <!-- Background Card -->
-  <rect x="1" y="1" width="838" height="198" rx="8" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5"/>
+  <!-- Frame Background -->
+  <rect x="1" y="1" width="918" height="418" rx="10" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.2"/>
 
-  <!-- Subtle Cyber Grid -->
-  <line x1="20" y1="50" x2="820" y2="50" class="grid-line"/>
-  <line x1="20" y1="100" x2="820" y2="100" class="grid-line"/>
-  <line x1="20" y1="150" x2="820" y2="150" class="grid-line"/>
-  <line x1="280" y1="10" x2="280" y2="190" class="grid-line"/>
-  <line x1="560" y1="10" x2="560" y2="190" class="grid-line"/>
+  <!-- ========================================== -->
+  <!-- 3D ISOMETRIC GRID PLANE (GROUND ELEVATION) -->
+  <!-- ========================================== -->
+  <g opacity="0.32" stroke="#334155" stroke-width="0.8">
+    <!-- Isometric Axis Lines (South-East) -->
+    <line x1="40" y1="210" x2="460" y2="395"/>
+    <line x1="120" y1="175" x2="540" y2="360"/>
+    <line x1="200" y1="140" x2="620" y2="325"/>
+    <line x1="280" y1="105" x2="700" y2="290"/>
+    <line x1="360" y1="70" x2="780" y2="255"/>
+    <line x1="440" y1="35" x2="860" y2="220"/>
 
-  <!-- Scanning Laser Beam -->
-  <line x1="10" y1="10" x2="830" y2="10" class="scan-line"/>
-
-  <!-- Header Bar -->
-  <rect x="1" y="1" width="838" height="34" rx="8" fill="#0f172a" fill-opacity="0.8"/>
-  <line x1="1" y1="35" x2="839" y2="35" stroke="#1e293b" stroke-width="1"/>
-  
-  <!-- Terminal Window Controls -->
-  <circle cx="22" cy="18" r="4.5" fill="#ef4444"/>
-  <circle cx="36" cy="18" r="4.5" fill="#f59e0b"/>
-  <circle cx="50" cy="18" r="4.5" fill="#10b981"/>
-
-  <text x="75" y="22" font-family="'Fira Code', 'JetBrains Mono', Courier, monospace" font-size="11" font-weight="600" fill="#94a3b8">
-    rio@production-edge-node-01: ~ (aero-network)
-  </text>
-
-  <!-- Live Status Pill -->
-  <g transform="translate(680, 10)">
-    <rect width="138" height="17" rx="3" fill="#064e3b" fill-opacity="0.4" stroke="#059669" stroke-width="0.8"/>
-    <circle cx="12" cy="8.5" r="3.5" fill="#10b981" class="led"/>
-    <text x="24" y="12" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#34d399" letter-spacing="0.5">SYS-ACTIVE: 100%</text>
+    <!-- Isometric Axis Lines (South-West) -->
+    <line x1="880" y1="210" x2="460" y2="395"/>
+    <line x1="800" y1="175" x2="380" y2="360"/>
+    <line x1="720" y1="140" x2="300" y2="325"/>
+    <line x1="640" y1="105" x2="220" y2="290"/>
+    <line x1="560" y1="70" x2="140" y2="255"/>
+    <line x1="480" y1="35" x2="60" y2="220"/>
   </g>
 
-  <!-- Column 1: Core Engine -->
-  <text x="28" y="66" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="1">
-    [01] TRANSACTIONAL ENGINE
-  </text>
-  <text x="28" y="86" font-family="'Fira Code', monospace" font-size="11" font-weight="600" fill="#f1f5f9">
-    AeroFlazz Core Gateway
-  </text>
-  <text x="28" y="104" font-family="'Fira Code', monospace" font-size="10" fill="#94a3b8">
-    Stack: Go Fiber / GORM v2
-  </text>
-  <text x="28" y="120" font-family="'Fira Code', monospace" font-size="10" fill="#64748b">
-    Concurrency: Row Lock (ACID)
-  </text>
-  <text x="28" y="136" font-family="'Fira Code', monospace" font-size="10" fill="#64748b">
-    State: Redis Mutex / Ticker
-  </text>
-  <text x="28" y="165" font-family="'Fira Code', monospace" font-size="9.5" font-weight="600" fill="#10b981">
-    LATENCY: &lt; 0.35ms [OPTIMAL]
+  <!-- Laser Scanline Sweep -->
+  <line x1="2" y1="0" x2="918" y2="0" stroke="#38bdf8" stroke-width="1.5" class="laser-scanner"/>
+
+  <!-- Header Window Bar -->
+  <rect x="1" y="1" width="918" height="34" rx="10" fill="#0f172a" fill-opacity="0.9"/>
+  <line x1="1" y1="35" x2="919" y2="35" stroke="#1e293b" stroke-width="1"/>
+  
+  <circle cx="22" cy="18" r="4" fill="#ef4444"/>
+  <circle cx="36" cy="18" r="4" fill="#f59e0b"/>
+  <circle cx="50" cy="18" r="4" fill="#10b981"/>
+
+  <text x="75" y="22" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#94a3b8">
+    rio@production-cluster-01: ~ [DISTRIBUTED 3D ARCHITECTURE MATRIX]
   </text>
 
-  <!-- Dynamic Data Packet Stream (Connector 1 to 2) -->
-  <path d="M 260 110 L 295 110" stroke="#38bdf8" stroke-width="1.8" class="stream"/>
+  <g transform="translate(680, 8)">
+    <rect width="225" height="19" rx="4" fill="#064e3b" fill-opacity="0.6" stroke="#059669" stroke-width="0.8"/>
+    <circle cx="12" cy="9.5" r="3.5" fill="#10b981" class="beacon-active"/>
+    <text x="24" y="13.5" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#34d399" letter-spacing="0.5">
+      SYSTEM STATUS: 100% OPERATIONAL
+    </text>
+  </g>
 
-  <!-- Column 2: FinTech & Payment Mutation -->
-  <text x="305" y="66" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="1">
-    [02] FINANCIAL GATEWAY
-  </text>
-  <text x="305" y="86" font-family="'Fira Code', monospace" font-size="11" font-weight="600" fill="#f1f5f9">
-    PaySaku v2 Dual-Engine
-  </text>
-  <text x="305" y="104" font-family="'Fira Code', monospace" font-size="10" fill="#94a3b8">
-    Stack: Native Rust (Tokio Async)
-  </text>
-  <text x="305" y="120" font-family="'Fira Code', monospace" font-size="10" fill="#64748b">
-    Security: HMAC-SHA256 Signed
-  </text>
-  <text x="305" y="136" font-family="'Fira Code', monospace" font-size="10" fill="#64748b">
-    Channels: GoBiz &amp; ShopeePay
-  </text>
-  <text x="305" y="165" font-family="'Fira Code', monospace" font-size="9.5" font-weight="600" fill="#10b981">
-    INTEGRITY: ZERO-OVERHEAD [PASS]
-  </text>
+  <!-- ======================================================== -->
+  <!-- 3D ROTATING HOLOGRAPHIC GYRO (Behind Center Hub)        -->
+  <!-- ======================================================== -->
+  <g opacity="0.6">
+    <!-- Outer Hologram Ring -->
+    <ellipse cx="460" cy="200" rx="140" ry="46" stroke="#6366f1" stroke-width="1.8" fill="none" class="ring-clockwise" filter="url(#laserGlowCyan)"/>
+    <!-- Inner Counter-Rotating Ring -->
+    <ellipse cx="460" cy="200" rx="95" ry="32" stroke="#38bdf8" stroke-width="1.2" fill="none" class="ring-counter"/>
+  </g>
 
-  <!-- Dynamic Data Packet Stream (Connector 2 to 3) -->
-  <path d="M 540 110 L 575 110" stroke="#38bdf8" stroke-width="1.8" class="stream"/>
+  <!-- ======================================================== -->
+  <!-- ISOMETRIC DATA CONDUITS (Glowing Inter-Node Pipelines)    -->
+  <!-- ======================================================== -->
+  <!-- Left Node to Center -->
+  <path d="M 210 200 L 350 200 L 415 200" stroke="#1e293b" stroke-width="4" fill="none"/>
+  <path d="M 210 200 L 350 200 L 415 200" stroke="#38bdf8" stroke-width="2.2" fill="none" class="stream-flow-cyan" filter="url(#laserGlowCyan)"/>
 
-  <!-- Column 3: Security & Server Telemetry -->
-  <text x="585" y="66" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="1">
-    [03] PERIMETER DEFENSE
-  </text>
-  <text x="585" y="86" font-family="'Fira Code', monospace" font-size="11" font-weight="600" fill="#f1f5f9">
-    Linux System Hardening
-  </text>
-  <text x="585" y="104" font-family="'Fira Code', monospace" font-size="10" fill="#94a3b8">
-    Rules: OWASP Top 10 Hardened
-  </text>
-  <text x="585" y="120" font-family="'Fira Code', monospace" font-size="10" fill="#64748b">
-    Firewall: UFW Isolated (80/443)
-  </text>
-  <text x="585" y="136" font-family="'Fira Code', monospace" font-size="10" fill="#64748b">
-    Rate-Limit: Sliding Window
-  </text>
-  <text x="585" y="165" font-family="'Fira Code', monospace" font-size="9.5" font-weight="600" fill="#38bdf8">
-    SECURITY: THREAT-FREE <tspan class="cursor">_</tspan>
-  </text>
+  <!-- Center to Right Node -->
+  <path d="M 505 200 L 580 200 L 710 200" stroke="#1e293b" stroke-width="4" fill="none"/>
+  <path d="M 505 200 L 580 200 L 710 200" stroke="#10b981" stroke-width="2.2" fill="none" class="stream-flow-emerald" filter="url(#laserGlowEmerald)"/>
+
+  <!-- Center to Top AI Vision Node -->
+  <path d="M 460 150 L 460 105" stroke="#1e293b" stroke-width="4" fill="none"/>
+  <path d="M 460 150 L 460 105" stroke="#f59e0b" stroke-width="2.2" fill="none" class="stream-flow-amber"/>
+
+  <!-- Center to Ground Persistence Pool -->
+  <path d="M 460 250 L 460 325" stroke="#1e293b" stroke-width="3" fill="none"/>
+  <path d="M 460 250 L 460 325" stroke="#818cf8" stroke-width="1.8" stroke-dasharray="8 8" fill="none" class="stream-flow-cyan"/>
+
+
+  <!-- ======================================================== -->
+  <!-- NODE 01: AEROFLAZZ FINANCIAL CORE (Left 3D Isometric Cube)-->
+  <!-- ======================================================== -->
+  <!-- Drop Shadow on ground -->
+  <ellipse cx="190" cy="275" rx="55" ry="16" fill="url(#isoShadow)"/>
+
+  <g class="anim-float-a" transform="translate(190, 160)">
+    <!-- 3D Cube (Width: 80, Height: 46) -->
+    <!-- Top Face -->
+    <polygon points="0,-40 40,-20 0,0 -40,-20" fill="url(#cubeA_Top)" stroke="#7dd3fc" stroke-width="0.8"/>
+    <!-- Left Face -->
+    <polygon points="-40,-20 0,0 0,44 -40,24" fill="url(#cubeA_Left)" stroke="#0284c7" stroke-width="0.8"/>
+    <!-- Right Face -->
+    <polygon points="0,0 40,-20 40,24 0,44" fill="url(#cubeA_Right)" stroke="#0369a1" stroke-width="0.8"/>
+    <!-- Top Specular Highlight -->
+    <circle cx="0" cy="-20" r="4.5" fill="#ffffff" opacity="0.9" filter="url(#beaconGlow)"/>
+
+    <!-- Labels Above Cube -->
+    <text x="0" y="-62" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" fill="#38bdf8" text-anchor="middle" letter-spacing="1">
+      [01] AEROFLAZZ CORE
+    </text>
+    <text x="0" y="-48" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#94a3b8" text-anchor="middle">
+      Go Fiber v2 • PostgreSQL ACID
+    </text>
+
+    <!-- Status Card Below Cube -->
+    <g transform="translate(0, 62)">
+      <rect x="-80" y="0" width="160" height="30" rx="4" fill="#090d16" fill-opacity="0.9" stroke="#1e293b" stroke-width="0.8"/>
+      <text x="-72" y="13" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">INVARIANT: DOUBLE-ENTRY</text>
+      <text x="-72" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#38bdf8">ZERO-SUM: BALANCED (Rp 0)</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- NODE 00: MASTER EDGE GATEWAY (Center 3D Isometric Cube)  -->
+  <!-- ======================================================== -->
+  <!-- Drop Shadow on ground -->
+  <ellipse cx="460" cy="285" rx="65" ry="18" fill="url(#isoShadow)"/>
+
+  <g class="anim-float-center" transform="translate(460, 185)">
+    <!-- 3D Master Cube (Width: 92, Height: 52) -->
+    <!-- Top Face -->
+    <polygon points="0,-46 46,-23 0,0 -46,-23" fill="url(#cubeCenter_Top)" stroke="#c7d2fe" stroke-width="0.8"/>
+    <!-- Left Face -->
+    <polygon points="-46,-23 0,0 0,50 -46,27" fill="url(#cubeCenter_Left)" stroke="#4f46e5" stroke-width="0.8"/>
+    <!-- Right Face -->
+    <polygon points="0,0 46,-23 46,27 0,50" fill="url(#cubeCenter_Right)" stroke="#4338ca" stroke-width="0.8"/>
+    <circle cx="0" cy="-23" r="5.5" fill="#ffffff" opacity="0.95" filter="url(#beaconGlow)"/>
+
+    <!-- Labels Above Center -->
+    <text x="0" y="-68" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#818cf8" text-anchor="middle" letter-spacing="1">
+      [00] DISTRIBUTED EDGE BUS
+    </text>
+    <text x="0" y="-53" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#c7d2fe" text-anchor="middle">
+      Zero-Trust Proxy • Redis Mutex
+    </text>
+
+    <!-- Status Card Below Center Cube -->
+    <g transform="translate(0, 68)">
+      <rect x="-85" y="0" width="170" height="30" rx="4" fill="#090d16" fill-opacity="0.9" stroke="#312e81" stroke-width="0.8"/>
+      <text x="0" y="13" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#94a3b8" text-anchor="middle">
+        LATENCY: &lt; 0.28ms [OPTIMAL]
+      </text>
+      <text x="0" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#a5b4fc" text-anchor="middle">
+        CIRCUIT BREAKER: ARMED
+      </text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- NODE 02: PAYSAKU V2 ENGINE (Right 3D Isometric Cube)     -->
+  <!-- ======================================================== -->
+  <!-- Drop Shadow on ground -->
+  <ellipse cx="730" cy="275" rx="55" ry="16" fill="url(#isoShadow)"/>
+
+  <g class="anim-float-b" transform="translate(730, 160)">
+    <!-- 3D Cube (Width: 80, Height: 46) -->
+    <!-- Top Face -->
+    <polygon points="0,-40 40,-20 0,0 -40,-20" fill="url(#cubeB_Top)" stroke="#6ee7b7" stroke-width="0.8"/>
+    <!-- Left Face -->
+    <polygon points="-40,-20 0,0 0,44 -40,24" fill="url(#cubeB_Left)" stroke="#059669" stroke-width="0.8"/>
+    <!-- Right Face -->
+    <polygon points="0,0 40,-20 40,24 0,44" fill="url(#cubeB_Right)" stroke="#047857" stroke-width="0.8"/>
+    <circle cx="0" cy="-20" r="4.5" fill="#ffffff" opacity="0.9" filter="url(#laserGlowEmerald)"/>
+
+    <!-- Labels Above Cube -->
+    <text x="0" y="-62" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" fill="#34d399" text-anchor="middle" letter-spacing="1">
+      [02] PAYSAKU V2 ENGINE
+    </text>
+    <text x="0" y="-48" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#94a3b8" text-anchor="middle">
+      Native Rust • Ed25519 FAPI
+    </text>
+
+    <!-- Status Card Below Cube -->
+    <g transform="translate(0, 62)">
+      <rect x="-80" y="0" width="160" height="30" rx="4" fill="#090d16" fill-opacity="0.9" stroke="#1e293b" stroke-width="0.8"/>
+      <text x="-72" y="13" font-family="'JetBrains Mono', monospace" font-size="8" fill="#64748b">NON-REPUDIATION: PASS</text>
+      <text x="-72" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#34d399">ZERO PRIVATE KEY STORAGE</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- NODE 03: KERTANUSA TELEMETRY (Top 3D Satellite Cube)     -->
+  <!-- ======================================================== -->
+  <g class="anim-float-top" transform="translate(460, 75)">
+    <!-- Smaller 3D Cube: Width=54, Depth=30 -->
+    <!-- Top Face -->
+    <polygon points="0,-27 27,-13 0,0 -27,-13" fill="url(#cubeTop_Top)" stroke="#fde68a" stroke-width="0.8"/>
+    <!-- Left Face -->
+    <polygon points="-27,-13 0,0 0,30 -27,17" fill="url(#cubeTop_Left)" stroke="#d97706" stroke-width="0.8"/>
+    <!-- Right Face -->
+    <polygon points="0,0 27,-13 27,17 0,30" fill="url(#cubeTop_Right)" stroke="#b45309" stroke-width="0.8"/>
+    <circle cx="0" cy="-13" r="3" fill="#ffffff" opacity="0.95"/>
+
+    <text x="36" y="-14" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#fbbf24">
+      [03] KERTANUSA TELEMETRY (FAO-56 / ECMWF)
+    </text>
+    <text x="36" y="-3" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">
+      Multimodal Vision AI Pathology &lt; 2s
+    </text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- GROUND PERSISTENCE & LEDGER POOL                         -->
+  <!-- ======================================================== -->
+  <g transform="translate(460, 355)">
+    <polygon points="0,-20 130,0 0,20 -130,0" fill="#090d16" stroke="#334155" stroke-width="1.2"/>
+    <ellipse cx="0" cy="0" rx="100" ry="14" fill="#0f172a" stroke="#475569" stroke-width="0.8"/>
+    <text x="0" y="4.5" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="1">
+      POSTGRESQL ACID LEDGER POOL (PERSISTENCE)
+    </text>
+  </g>
+
+  <!-- Live Protocol Indicator at Bottom -->
+  <g transform="translate(30, 395)">
+    <text font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#64748b">
+      SYSTEM PROTOCOL: <tspan fill="#38bdf8">ENCRYPTED DUAL-RESOLUTION</tspan> | RECOVERY: <tspan fill="#34d399">AUTOMATIC</tspan>
+      <tspan class="blink-text" fill="#38bdf8"> _</tspan>
+    </text>
+  </g>
 
   <!-- Bottom Accent Line -->
-  <rect x="0" y="196" width="840" height="4" fill="url(#cyanLine)"/>
+  <rect x="0" y="416" width="920" height="4" fill="url(#cubeA_Top)"/>
 </svg>
