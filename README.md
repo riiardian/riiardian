@@ -21,7 +21,7 @@
     <a href="https://linkedin.com/in/riiardian">
       <img src="https://img.shields.io/badge/LinkedIn-Rio%20Ardian-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" />
     </a>
-    <img src="https://img.shields.io/badge/Location-Bandung%2C%20Indonesia-0052CC?style=flat-square" alt="Location" />
+    <img src="https://img.shields.io/badge/Location-Tangerang%2C%20Indonesia-0052CC?style=flat-square" alt="Location" />
   </p>
 </div>
 
@@ -29,16 +29,16 @@
 
 ### About Me
 
-Mahasiswa Teknik Informatika di Telkom University (angkatan 2026) yang berfokus pada arsitektur sistem backend berkinerja tinggi, gerbang pembayaran digital, dan infrastruktur cloud Linux. 
+Software engineer berbasis di Tangerang yang berfokus pada arsitektur sistem backend, pemrosesan transaksi finansial, dan kehandalan infrastruktur Linux. Menempuh studi Teknik Informatika di Telkom University sembari aktif membangun serta mengoperasikan platform digital mandiri berskala produksi.
 
-Aktif merancang, membangun, dan mengelola platform produksi nyata dari tahap arsitektur, manajemen database, keamanan transaksi, hingga otomasi deployment menggunakan Go (Golang), Rust, dan Next.js.
+Bekerja utamanya dengan **Go (Golang)**, **Rust**, dan **Next.js**, dengan perhatian khusus pada integritas data, efisiensi resource server, dan stabilitas layanan saat menangani lonjakan transaksi nyata.
 
 ---
 
 ### Featured Projects
 
 #### AeroFlazz — Platform Distribusi Digital &amp; PPOB Otomatis
-Platform agregator produk digital dan layanan PPOB 24 jam nonstop untuk pulsa, paket data, voucher game, token listrik, dan virtual number OTP dengan pemrosesan transaksi berkecepatan tinggi.
+Platform agregator produk digital dan layanan PPOB yang melayani transaksi pulsa, paket data, token listrik, voucher game, hingga nomor virtual OTP secara otomatis selama 24 jam.
 
 Teknologi: `Go (Fiber v2)` / `PostgreSQL` / `Redis` / `Next.js 16` / `TypeScript` / `Nginx`
 
@@ -47,7 +47,7 @@ Tautan: [Website Resmi (aeroflazz.com)](https://aeroflazz.com) | [Tentang Pengem
 ---
 
 #### PaySaku — Payment Gateway QRIS &amp; Otomasi Mutasi Merchant
-Gerbang pembayaran digital real-time berbasis Rust dengan integrasi multi-channel (GoBiz dan ShopeePay Merchant) untuk settlement transaksi instan dan rekonsiliasi mutasi otomatis.
+Gerbang pembayaran digital real-time berbasis Rust untuk rekonsiliasi mutasi otomatis multi-channel (GoBiz dan ShopeePay Merchant) guna mendukung settlement transaksi instan.
 
 Teknologi: `Rust (Tokio / Axum)` / `React 19` / `TypeScript` / `PostgreSQL` / `Tailwind CSS`
 
@@ -56,7 +56,7 @@ Tautan: [Website Resmi (paysaku.site)](https://paysaku.site) | [Dokumentasi API]
 ---
 
 #### Kertanusa — Platform Telemetri &amp; AI Presisi Pertanian
-Sistem pendukung keputusan pertanian presisi berbasis integrasi data cuaca global (ECMWF, NOAA, BMKG) dan diagnosis penyakit tanaman menggunakan computer vision.
+Sistem pendukung keputusan pertanian presisi yang memadukan integrasi data satelit cuaca global (ECMWF, NOAA, BMKG) dan visi komputer untuk diagnosis kondisi tanaman.
 
 Teknologi: `Next.js` / `TypeScript` / `Tailwind CSS` / `Vision AI` / `Leaflet GIS`
 
