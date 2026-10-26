@@ -88,27 +88,6 @@ Tautan: [Repositori GitHub (riiardian/kertanusa)](https://github.com/riiardian/k
 
 ---
 
-### Activity &amp; Contributions
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/riiardian/riiardian/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="100%" />
-</div>
-
----
-
-### GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=riiardian&show_icons=true&theme=github_dark&hide_border=false&count_private=true" width="48%" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=riiardian&layout=compact&theme=github_dark&hide_border=false&hide=css,html&count_private=true" width="48%" alt="Top Languages" />
-</div>
-
-<div align="center" style="margin-top: 10px;">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=riiardian&theme=github_dark&hide_border=false" width="97%" alt="GitHub Streak" />
-</div>
-
----
-
 <div align="center">
   <sub>© 2026 Rio Ardian Pratama</sub>
 </div>
