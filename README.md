@@ -70,6 +70,22 @@ Tautan: [Repositori GitHub (riiardian/kertanusa)](https://github.com/riiardian/k
 
 ---
 
+### Security Architecture &amp; System Hardening
+
+Infrastruktur dan engine transaksi produksi dirancang dengan standar keamanan enterprise:
+
+`Zero-Trust Perimeter` Cloudflare Strict SSL, mTLS, dan perisai reverse proxy Nginx yang terisolasi untuk menangkal serangan perimeter.
+
+`Kriptografi Asimetris Ed25519` Tanda tangan digital standar SNAP BI / FAPI untuk non-repudiation mutasi merchant tanpa menyimpan private key di server.
+
+`Double-Entry Ledger Engine` Pembukuan berpasangan dengan verifikasi zero-sum matematis otomatis untuk mencegah saldo gantung atau desinkronisasi.
+
+`Anti-Race Condition Concurrency` Penguncian pesimistik tingkat baris database dan Redis Distributed Mutex untuk mencegah double-spend attack saat traffic tinggi.
+
+`Defensive Hardening Pipeline` Proteksi sesi HttpOnly cookie anti-XSS, sanitasi URL callback OAuth, dan pencegahan SSRF pada webhook dispatcher.
+
+---
+
 ### Tech Stack &amp; Tools
 
 <div align="center">
@@ -85,6 +101,20 @@ Tautan: [Repositori GitHub (riiardian/kertanusa)](https://github.com/riiardian/k
 | **Frontend &amp; UI** | Next.js (App Router), React, Tailwind CSS |
 | **Basis Data &amp; Caching** | PostgreSQL, MySQL, Redis, SQLite |
 | **DevOps &amp; Server** | Linux (Debian/Ubuntu), Nginx Reverse Proxy, PM2, Supervisor, Cloudflare Edge |
+
+---
+
+### 3D Contribution Architecture
+
+<div align="center">
+  <img src="profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D Contribution Graph" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=riiardian&theme=github-dark-blue&hide_border=true" width="95%" alt="GitHub Streak & Contributions" />
+</div>
 
 ---
 
