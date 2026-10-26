@@ -70,19 +70,11 @@ Tautan: [Repositori GitHub (riiardian/kertanusa)](https://github.com/riiardian/k
 
 ---
 
-### Security Architecture &amp; System Hardening
+### Cyber Threat &amp; Defensive Operations
 
-Infrastruktur dan engine transaksi produksi dirancang dengan standar keamanan enterprise:
-
-`Zero-Trust Perimeter` Cloudflare Strict SSL, mTLS, dan perisai reverse proxy Nginx yang terisolasi untuk menangkal serangan perimeter.
-
-`Kriptografi Asimetris Ed25519` Tanda tangan digital standar SNAP BI / FAPI untuk non-repudiation mutasi merchant tanpa menyimpan private key di server.
-
-`Double-Entry Ledger Engine` Pembukuan berpasangan dengan verifikasi zero-sum matematis otomatis untuk mencegah saldo gantung atau desinkronisasi.
-
-`Anti-Race Condition Concurrency` Penguncian pesimistik tingkat baris database dan Redis Distributed Mutex untuk mencegah double-spend attack saat traffic tinggi.
-
-`Defensive Hardening Pipeline` Proteksi sesi HttpOnly cookie anti-XSS, sanitasi URL callback OAuth, dan pencegahan SSRF pada webhook dispatcher.
+<div align="center">
+  <img src="assets/cyber-telemetry-hud.gif" width="100%" alt="Cyber Security Telemetry HUD" />
+</div>
 
 ---
 
@@ -104,10 +96,10 @@ Infrastruktur dan engine transaksi produksi dirancang dengan standar keamanan en
 
 ---
 
-### 3D Contribution Architecture
+### Activity &amp; Commit Telemetry
 
 <div align="center">
-  <img src="profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D Contribution Graph" />
+  <img src="https://raw.githubusercontent.com/riiardian/riiardian/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake Animation" />
 </div>
 
 <br/>
