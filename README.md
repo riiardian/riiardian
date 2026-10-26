@@ -2,11 +2,11 @@
   <h1 align="center">Rio Ardian Pratama</h1>
   <p align="center">
     <strong>Systems Architect &amp; Backend Engineer</strong><br/>
-    Informatika • Telkom University ('26)
+    High-Concurrency Infrastructure &amp; Transactional Systems
   </p>
 
   <a href="https://github.com/riiardian">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2200&pause=600&color=38BDF8&background=0D1117&center=true&vCenter=true&width=440&lines=Backend+Engineer+%7C+Go+%E2%80%A2+Rust;Founder+of+AeroFlazz+%26+PaySaku;High-Throughput+APIs+%26+Microservices;Linux+Systems+%26+Cloud+Infrastructure" alt="Terminal Typing" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2200&pause=600&color=38BDF8&background=0D1117&center=true&vCenter=true&width=440&lines=Backend+Engineer+%7C+Go+%2F+Rust;Founder+of+AeroFlazz+%26+PaySaku;High-Throughput+APIs+%26+Microservices;Linux+Systems+%26+Cloud+Infrastructure" alt="Terminal Typing" />
   </a>
 
   <br/><br/>
@@ -29,32 +29,38 @@
 
 ### About Me
 
-Mahasiswa Teknik Informatika di **Telkom University** (angkatan 2026) dengan spesialisasi pada arsitektur sistem backend berperforma tinggi, gerbang pembayaran digital, dan infrastruktur cloud Linux. 
+Mahasiswa Teknik Informatika di Telkom University (angkatan 2026) yang berfokus pada arsitektur sistem backend berkinerja tinggi, gerbang pembayaran digital, dan infrastruktur cloud Linux. 
 
-Berpengalaman merancang dan memelihara platform berskala produksi dari tahap arsitektur, basis data, keamanan transaksi, hingga otomatisasi deployment menggunakan **Go (Golang)**, **Rust**, dan **Next.js**.
+Aktif merancang, membangun, dan mengelola platform produksi nyata dari tahap arsitektur, manajemen database, keamanan transaksi, hingga otomasi deployment menggunakan Go (Golang), Rust, dan Next.js.
 
 ---
 
 ### Featured Projects
 
 #### AeroFlazz — Platform Distribusi Digital &amp; PPOB Otomatis
-Platform agregator produk digital dan PPOB 24 jam nonstop untuk kebutuhan pulsa, paket data, voucher game, token listrik, dan virtual number OTP.
-- **Teknologi:** `Go (Fiber v2)` • `PostgreSQL` • `Redis` • `Next.js 16` • `TypeScript` • `Nginx`
-- **Tautan:** [Website Resmi (aeroflazz.com)](https://aeroflazz.com) • [Tentang Pengembang](https://aeroflazz.com/tentang-kami)
+Platform agregator produk digital dan layanan PPOB 24 jam nonstop untuk pulsa, paket data, voucher game, token listrik, dan virtual number OTP dengan pemrosesan transaksi berkecepatan tinggi.
+
+Teknologi: `Go (Fiber v2)` / `PostgreSQL` / `Redis` / `Next.js 16` / `TypeScript` / `Nginx`
+
+Tautan: [Website Resmi (aeroflazz.com)](https://aeroflazz.com) | [Tentang Pengembang](https://aeroflazz.com/tentang-kami)
 
 ---
 
 #### PaySaku — Payment Gateway QRIS &amp; Otomasi Mutasi Merchant
-Gerbang pembayaran digital real-time berbasis Rust berkecepatan tinggi dengan integrasi otomatis multi-channel (GoBiz &amp; ShopeePay Merchant) untuk settlement transaksi instan.
-- **Teknologi:** `Rust (Tokio / Axum)` • `React 19` • `TypeScript` • `PostgreSQL` • `Tailwind CSS`
-- **Tautan:** [Website Resmi (paysaku.site)](https://paysaku.site) • [Dokumentasi API](https://paysaku.site/docs)
+Gerbang pembayaran digital real-time berbasis Rust dengan integrasi multi-channel (GoBiz dan ShopeePay Merchant) untuk settlement transaksi instan dan rekonsiliasi mutasi otomatis.
+
+Teknologi: `Rust (Tokio / Axum)` / `React 19` / `TypeScript` / `PostgreSQL` / `Tailwind CSS`
+
+Tautan: [Website Resmi (paysaku.site)](https://paysaku.site) | [Dokumentasi API](https://paysaku.site/docs)
 
 ---
 
 #### Kertanusa — Platform Telemetri &amp; AI Presisi Pertanian
-Sistem pendukung keputusan pertanian presisi berbasis data cuaca global (ECMWF, NOAA, BMKG) dan diagnosis penyakit tanaman menggunakan kecerdasan buatan (Computer Vision).
-- **Teknologi:** `Next.js` • `TypeScript` • `Tailwind CSS` • `Vision AI` • `Leaflet GIS`
-- **Tautan:** [Repositori GitHub (riiardian/kertanusa)](https://github.com/riiardian/kertanusa)
+Sistem pendukung keputusan pertanian presisi berbasis integrasi data cuaca global (ECMWF, NOAA, BMKG) dan diagnosis penyakit tanaman menggunakan computer vision.
+
+Teknologi: `Next.js` / `TypeScript` / `Tailwind CSS` / `Vision AI` / `Leaflet GIS`
+
+Tautan: [Repositori GitHub (riiardian/kertanusa)](https://github.com/riiardian/kertanusa)
 
 <div align="center" style="margin-top: 15px;">
   <a href="https://github.com/riiardian/kertanusa">
@@ -104,5 +110,5 @@ Sistem pendukung keputusan pertanian presisi berbasis data cuaca global (ECMWF, 
 ---
 
 <div align="center">
-  <sub>© 2026 Rio Ardian Pratama • Telkom University</sub>
+  <sub>© 2026 Rio Ardian Pratama</sub>
 </div>
